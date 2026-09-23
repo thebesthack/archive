@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/archive.png" type="image/png">
+<title>My Archive</title>
+
+
+</head>
+
+
+<body>
+
+
+<nav>
+
+    <div class="logo">
+        My Archive
+    </div>
+
+    <a href="#projects">
+        Projects ↓
+    </a>
+
+</nav>
+
+
+<section class="hero">
+
+    <h1>
+        Everything<br>
+        <span>I made.</span>
+    </h1>
+
+    <p>
+        A collection of my school projects, presentations,
+        experiments, designs, and other things I've created.
+        Future me can look back and see how much I've changed.
+    </p>
+
+
+    <div class="stats">
+
+        <div class="stat">
+            <strong id="projectNumber">0</strong>
+            <span>Projects</span>
+        </div>
+
+        <div class="stat">
+            <strong id="yearNumber">0</strong>
+            <span>Years</span>
+        </div>
+
+        <div class="stat">
+            <strong id="subjectNumber">0</strong>
+            <span>Subjects</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="controls">
+
+    <input
+        id="search"
+        class="search"
+        placeholder="🔎 Search projects..."
+        oninput="renderProjects()"
+    >
+
+    <select
+        id="yearFilter"
+        onchange="renderProjects()">
+
+        <option value="all">
+            All Years
+        </option>
+
+    </select>
+
+
+    <select
+        id="subjectFilter"
+        onchange="renderProjects()">
+
+        <option value="all">
+            All Subjects
+        </option>
+
+    </select>
+
+</div>
+
+
+<main id="projects">
+
+    <div class="section-title">
+
+        <h2>
+            My Projects
+        </h2>
+
+        <span
+            class="project-count"
+            id="count">
+        </span>
+
+    </div>
+
+
+    <div
+        class="projects"
+        id="projectGrid">
+    </div>
+
+</main>
+
+
+<footer>
+
+    My Archive • EST 2026-09
+
+</footer>
+
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
+```
